@@ -10,6 +10,3 @@ export LANG='en_US.UTF-8';
 export LC_ALL='en_US.UTF-8';
 
 export JAVA_HOME=$(/usr/libexec/java_home)
-
-export PAGER=less
-export LESS="-ieMSx4 -FX"
