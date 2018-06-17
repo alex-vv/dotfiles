@@ -11,6 +11,7 @@ brew install awscli
 brew install httpie
 brew install leiningen
 brew install sbt
+brew install git
 
 # Cask
 brew tap homebrew/cask
