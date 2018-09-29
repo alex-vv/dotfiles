@@ -19,7 +19,16 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Locale                                                                      #
 ###############################################################################
 
+# doesn't work in 10.14 :( https://twitter.com/angelXwind/status/1044499584540708865
 defaults write ~/Library/Preferences/.GlobalPreferences AppleLocale -string "ru_RU"
+
+###############################################################################
+# Font smoothing on Mojave (enable after upgrade)
+###############################################################################
+
+#defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+#defaults write com.apple.iTunes AppleFontSmoothing -int 0
+#defaults write com.google.Chrome CGFontRenderingFontSmoothingDisabled -bool NO
 
 ###############################################################################
 # General UI/UX                                                               #
