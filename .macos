@@ -30,6 +30,12 @@ defaults write ~/Library/Preferences/.GlobalPreferences AppleLocale -string "ru_
 #defaults write com.apple.iTunes AppleFontSmoothing -int 0
 #defaults write com.google.Chrome CGFontRenderingFontSmoothingDisabled -bool NO
 
+# https://github.com/Microsoft/vscode/issues/59887#issuecomment-449636774
+defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.EH CGFontRenderingFontSmoothingDisabled 0
+defaults write com.microsoft.VSCode.helper.NP CGFontRenderingFontSmoothingDisabled 0
+
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
