@@ -23,12 +23,12 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 defaults write ~/Library/Preferences/.GlobalPreferences AppleLocale -string "ru_RU"
 
 ###############################################################################
-# Font smoothing on Mojave (enable after upgrade)
+# Font smoothing
 ###############################################################################
 
-#defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
-#defaults write com.apple.iTunes AppleFontSmoothing -int 0
-#defaults write com.google.Chrome CGFontRenderingFontSmoothingDisabled -bool NO
+# Adjust font smoothing for some apps (Big Sur)
+defaults write com.culturedcode.ThingsMac AppleFontSmoothing -int 0
+defaults write it.bloop.airmail2 AppleFontSmoothing -int 0
 
 # https://github.com/Microsoft/vscode/issues/59887#issuecomment-449636774
 defaults write com.microsoft.VSCode CGFontRenderingFontSmoothingDisabled 0
