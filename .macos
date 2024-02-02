@@ -367,6 +367,10 @@ defaults write com.google.Chrome DisablePrintPreview -bool true
 # Expand the print dialog by default
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 
+
+defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
