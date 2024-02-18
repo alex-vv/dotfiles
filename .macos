@@ -368,7 +368,9 @@ defaults write com.google.Chrome DisablePrintPreview -bool true
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 
 
-defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+#defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
 
 
 ###############################################################################
