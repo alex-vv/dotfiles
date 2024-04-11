@@ -110,4 +110,6 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
